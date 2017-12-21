@@ -1,0 +1,22 @@
+{
+	"name": "richbarrett/parcelforce-tracking-scraper",
+	"homepage": "https://github.com/richbarrett7/ParcelforceTrackingScraper",
+	"description": "Scrapes Parcelforce tracking events from their website because they do not provide an official tracking API",
+	"license": "MIT",
+	"keywords": ["parcelforce","tracking","scrape","delivery","courier"],
+  "version": "0.1",
+	"authors": [
+	{
+		"name": "Richard Barrett",
+		"email": "rbarrett1@gmail.com"
+	}
+	],
+	"require": {
+      "php": ">=5.6.0"
+  },
+	"autoload": {
+		"classmap": [
+		"src/ParcelforceTrackingScraper.php"
+		]
+	}
+}
