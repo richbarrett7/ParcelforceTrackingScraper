@@ -1,7 +1,7 @@
 # Introduction
 This scrapes Parcelforce tracking events from their website because they do not provide an official tracking API.
 
-#Installation
+# Installation
 `composer require richbarrett/parcelforce-tracking-scraper`
 
 # Usage
@@ -25,4 +25,4 @@ try {
 ```
 
 # Health Warning
-Obviously Parcelforce could change their trackign webpage at any time resulting in this breaking, so bear that in mind if you use it in your application.
+Obviously Parcelforce could change their tracking webpage at any time resulting in this breaking, so bear that in mind if you use it in your application.
