@@ -4,7 +4,7 @@
 	"description": "Scrapes Parcelforce tracking events from their website because they do not provide an official tracking API",
 	"license": "MIT",
 	"keywords": ["parcelforce","tracking","scrape","delivery","courier"],
-  "version": "0.1",
+  "version": "0.2",
 	"authors": [
 	{
 		"name": "Richard Barrett",

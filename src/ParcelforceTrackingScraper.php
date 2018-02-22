@@ -17,15 +17,15 @@ class ParcelforceTrackingScraper {
     $response = $this->curl_get_data($this->url);
         
     if($response['responseCode'] != 200) {
-      throw new Exception('Response code is '.$response['responseCode']);
+      throw new \Exception('Response code is '.$response['responseCode']);
     }
     
     if(strpos($response['data'],'Invalid tracking number') !== false) {
-      throw new Exception('Invalid tracking number');
+      throw new \Exception('Invalid tracking number');
     }
     
     if(strpos($response['data'],'currently unable to confirm the status of your parcel') !== false) {
-      throw new Exception('No events available yet');
+      throw new \Exception('No events available yet');
     }
     
     preg_match_all('/td class="tracking-history-date">([0-9\/]+)</', $response['data'], $dates);
