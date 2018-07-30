@@ -53,7 +53,7 @@ class ParcelforceTrackingScraper {
     }
 
     public function getSubIds() {        
-        $dom = new DOMDocument;
+        $dom = new DOMDocument();
         @$dom->loadHTML($this->response['data']);
         $links = $dom->getElementsByTagName('a');
         $refs= array();
