@@ -1,6 +1,6 @@
 <?PHP
 
-//namespace richbarrett\ParcelforceTrackingScraper;
+namespace richbarrett\ParcelforceTrackingScraper;
 
 class ParcelforceTrackingScraper {
 
