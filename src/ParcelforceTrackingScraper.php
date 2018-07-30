@@ -8,9 +8,7 @@ class ParcelforceTrackingScraper {
     var $response;
 
     function __construct($trackingNumber) {
-
-        $this->url = 'https://www.parcelforce.com/track-trace?trackNumber=' . $trackingNumber;
-        //$this->url = 'https://www.parcelforce.com/track-trace?consignmentNumber=ML1858245&trackNumber=PBML1858245001';
+        $this->url = 'https://www.parcelforce.com/track-trace?trackNumber=' . $trackingNumber;        
     }
 
     function getEvents() {
