@@ -55,7 +55,7 @@ class ParcelforceTrackingScraper {
             $ret[$key]['description'] = strip_tags($descriptions[$key]);
 
             if ($ret[$key]['description'] == "Delivered") {
-                $ret[$key]['signature_name'] = $signature_name[0];
+                $ret[$key]['signature_name'] = preg_replace('!\s+!', ' ', $signature_name[0]);
                 $ret[$key]['signature_image'] = $signature_image[0];
             }
 
